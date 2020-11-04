@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/registrarte.css">
+    <link rel="stylesheet" href="assets/css/registro.css">
+    
+</head>
+<body>
+    <form action="registrarte.php" id="formulario" class="form-signin" method="POST">
+      <h1 style="text-align: center; margin-top: 25px;">Registrate</h1>
+      
+        <label for="inputUser" class="sr-only">Usuario</label>
+        <input type="text" id="inputUser" class="form-control" name="inputUser" placeholder="Usuario" required autofocus>
+        <br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="Password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Contraseña" required>
+        <br>
+        <label for="inputnombre" class="sr-only">Nombre</label>
+        <input type="text" id="inputnombre" class="form-control" name="inputnombre" placeholder="Nombre" required autofocus>
+        <br>
+        <label for="inputcorreo" class="sr-only">Correo Electronico</label>
+        <input type="text" id="inputcorreo" class="form-control" name="inputcorreo" placeholder="Correo electrónico" required autofocus>
+        <!--
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+    -->
+        <button id="btnRegistro" class="btn btn-lg btn-block color_btn" type="submit">Guardar</button>
+        <!-- The JS SDK Login Button -->
+
+    </form>
+    <script src="assets/js/registro.js"></script>
+
+    
+</body>
+</html>
